@@ -1,0 +1,41 @@
+header{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(255,255,255);
+    color: #3a3a3a;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-left{
+    height:100px;
+    margin:0 10%;
+}
+
+.logo{
+    height:95%;
+}
+
+.header-right{
+    margin:0 20%;
+    display: flex;
+}
+
+.header-right a {
+    color:#3a3a3a;
+    text-decoration: none;
+    font-size: 18px;
+    padding:7px;
+    border-radius: 3px;
+    margin:1px;
+    transition:0.3s;
+}
+
+.active{
+    background-color: #ff4040;
+    color:  rgb(255,255,255) !important;
+}
+
+.header-right a:hover{
+    background-color: #ff4040;
+    color:  rgb(255,255,255);
+}
