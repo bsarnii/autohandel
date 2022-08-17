@@ -1,13 +1,14 @@
 import './App.css';
 import Header from './Header';
 import Willkommen from './Willkommen';
+import Autokarten from './Autokarten';
 
 function App() {
   return (
     <div className="App">
      <Header />
      <Willkommen />
-     {/*Card angebote*/}
+     <Autokarten />
      {/*Mitarbeiter + Geschäftszeiten*/}
      {/*Kontakt*/}
      {/*Footer*/}

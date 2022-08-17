@@ -1,0 +1,10 @@
+.karte{
+    border:1px solid #3a3a3a;
+    width: 240px;
+}
+
+.karte-img{
+    height: 180px;
+    width: 100%;
+    vertical-align: middle;
+}
