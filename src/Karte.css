@@ -1,10 +1,41 @@
 .karte{
-    border:1px solid #3a3a3a;
-    width: 240px;
+    border:1px solid #ff40404d;
+    min-width: 240px;
+    width: 250px;
+    box-shadow: 5px 5px 10px #ff40404d;
+    margin:10px;
 }
 
 .karte-img{
-    height: 180px;
+    height: 160px;
     width: 100%;
     vertical-align: middle;
+}
+
+.karte-name{
+    font-weight: bold;
+    padding: 15px;
+    margin: 0 10px;
+    font-size: large;
+    text-align: center;
+    border-bottom: 1px solid #ff40404d;
+}
+
+.karte-daten{
+    line-height: 1.7em;
+    text-align: start;
+    padding:15px;
+}
+.karte-daten li {
+    list-style: none;
+}
+.karte-daten ul {
+    margin:0;
+    padding: 0;
+}
+.preis{
+    text-align: center;
+    font-weight: bold;
+    margin:10px;
+    color:#ff4040;
 }
