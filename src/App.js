@@ -2,6 +2,7 @@ import './App.css';
 import Header from './Header';
 import Willkommen from './Willkommen';
 import Autokarten from './Autokarten';
+import Mitarbeiter from './Mitarbeiter';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
      <Header />
      <Willkommen />
      <Autokarten />
-     {/*Mitarbeiter + Geschäftszeiten*/}
+     <Mitarbeiter />
      {/*Kontakt*/}
      {/*Footer*/}
     </div>

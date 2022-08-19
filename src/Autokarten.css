@@ -1,5 +1,5 @@
 .autokarten{
-    height:fit-content;
+    height: fit-content;
 }
 
 .autokarten h2{
@@ -13,7 +13,6 @@
 
 .karten {
     padding:20px 150px;
-    border-bottom: 1px solid #ff4040;
     display:flex;
     justify-content: center;
 }

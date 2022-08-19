@@ -1,0 +1,41 @@
+.mitarbeiter{
+    margin: 10px;
+    border: 3px solid #ff4040;
+}
+.mitarbeiter-container{
+    background-color: #ff4040 ;
+    color:white;
+}
+.top-mitarbeiter{
+    padding: 30px 0 ;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.bottom-mitarbeiter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:250px;
+}
+
+.bottom-mitarbeiter p {
+    width:500px;
+    padding:20px;
+}
+
+.geschäftszeiten{
+    display: flex;
+    flex-direction: row;
+    height:150px;
+    justify-content: space-around;
+    padding-top: 40px;
+    color: #ff4040;
+}
+.col-1 p, .col-2, .col-3 {
+    color: #3a3a3a;
+}
+.col-2, .col-3 {
+    font-weight: bold;
+}
