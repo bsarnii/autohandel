@@ -1,0 +1,79 @@
+.kontakt{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
+}
+.kontakt-row-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.kontakt-row-1 h2{
+    color: #ff4040;
+    margin:5px;
+}
+.kontakt-row-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.inputs{
+    margin-left: 20px;
+}
+.inputs > h2{
+    color: #ff4040;
+}
+.inputs > form{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+.form-row-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+.form-row-1 input{
+    width:200px;
+    height:20px;
+    border: 1px solid #3a3a3a7c;
+    outline-color: #3a3a3aaf;
+}
+.form-row-2 textarea{
+    width: 100%;
+    height: 75px;
+    border: 1px solid #3a3a3a7c;
+    outline-color: #3a3a3aaf;
+}
+.form-row-3{
+    align-self: center;
+    margin-top: 20px;
+}
+.form-row-3 button {
+    padding:10px 40px;
+    color:#ff4040;
+    font-weight: bold;
+    border: 2px solid #ff4040;
+    border-radius: 3px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.form-row-3 button:hover{
+    color: white;
+    background-color: #ff4040;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:294px;
+    width:350px;
+}
+.gmap_canvas{
+    overflow:hidden;
+    background:none!important;
+    height:294px;
+    width:350px;
+}
