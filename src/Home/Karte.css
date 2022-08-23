@@ -5,12 +5,17 @@
     box-shadow: 5px 5px 10px #ff40404d;
     margin:10px;
     cursor:pointer;
+    position: relative;
+}
+.karte:hover .karte-img{
+    opacity:0.8;
 }
 
 .karte-img{
     height: 160px;
     width: 100%;
     vertical-align: middle;
+    transition: 0.3s;
 }
 
 .karte-name{
@@ -26,6 +31,7 @@
     line-height: 1.7em;
     text-align: start;
     padding:15px;
+    padding-bottom:35px;
 }
 .karte-daten li {
     list-style: none;
@@ -37,6 +43,8 @@
 .preis{
     text-align: center;
     font-weight: bold;
-    margin:10px;
     color:#ff4040;
+    position:absolute;
+    bottom:10px;
+    left:90px;
 }

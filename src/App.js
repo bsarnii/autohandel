@@ -1,20 +1,16 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Header from './Header';
-import Willkommen from './Willkommen';
-import Autokarten from './Autokarten';
-import Mitarbeiter from './Mitarbeiter';
-import Kontakt from './Kontakt';
-import Footer from './Footer';
+import Home from './Home/Home';
+import Galerie from './Galerie/Galerie';
+
 
 function App() {
   return (
     <div className="App">
-     <Header />
-     <Willkommen />
-     <Autokarten />
-     <Mitarbeiter />
-     <Kontakt />
-     <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path='galerie' element={<Galerie />}/>
+      </Routes>
     </div>
   );
 }

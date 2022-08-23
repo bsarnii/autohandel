@@ -19,7 +19,7 @@ function Kontakt() {
                         <div className='input-name'>
                             <label htmlFor='name'>Name:</label>
                             <br />
-                            <input name='name' id='name' type='text' />
+                            <input required name='name' id='name' type='text' />
                         </div>
                         <div className='input-email'>
                             <label htmlFor='email'>E-Mail-Adresse:</label>

@@ -6,8 +6,8 @@ function Autokarten() {
   return (
     <div className='autokarten'>
         <h2>Unsere Fahrzeuge</h2>
-        <div className='karten'>
-            <Karte 
+        <div className='karten' >
+            <Karte
             name='Opel Astra'
             img='opel-astra.jpg'
             jahr='2016'
@@ -25,7 +25,7 @@ function Autokarten() {
             km='3.815 km'
             preis='85 000 €'
              />
-            <Karte
+            <Karte 
             name='Volkswagen Golf VII'
             img='volkswagen-golf.jpg'
             jahr='2019'
@@ -34,7 +34,7 @@ function Autokarten() {
             km='57.990 km'
             preis='34 890 €'
             />
-            <Karte
+            <Karte 
             name='Audi A3'
             img='audi-a3.jpg'
             jahr='2018'
@@ -43,7 +43,7 @@ function Autokarten() {
             km='72.300 km'
             preis='24 700 €'
             />
-            <Karte
+            <Karte 
             name='Volkswagen T-Roc R-Line'
             img='vw-troc.jpg'
             jahr='2020'
