@@ -1,0 +1,58 @@
+.galerie > h1 {
+    text-align: center;
+    padding-bottom: 21.4px;
+    margin-bottom: 0;
+    border-bottom: 2px solid #ff4040bb;
+}
+.galerie-main{
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.galerie-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    height:500px;
+    margin: 20px 200px;
+}
+.galerie-container > div{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.galerie-container > div:hover {
+    opacity: 0.8;
+}
+    
+.bild-1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url('/public/galerie/bild-1.jpg');
+    background-size: cover;
+
+
+ }
+.bild-2 {
+    grid-area: 2 / 1 / 3 / 2; 
+    background-image: url('/public/galerie/bild-2.jpg');
+    background-size: cover;
+}
+.bild-3 {
+    grid-area: 1 / 2 / 2 / 3; 
+    background-image: url('/public/galerie/bild-3.jpg');
+    background-size: cover;
+}
+.bild-4 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    background-image: url('/public/galerie/bild-4.jpg');
+    background-size: cover;
+}
+.bild-5 { 
+    grid-area: 1 / 3 / 3 / 4; 
+    background-image: url('/public/galerie/bild-5.jpg');
+    background-size: cover;
+}

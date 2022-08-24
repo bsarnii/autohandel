@@ -11,7 +11,11 @@ import Footer from './Footer';
 function Home() {
   return (
     <div>
-     <Header />
+     <Header 
+      homeClass="home active" 
+      galerieClass="galerie"
+      kontaktClass="kontakt" 
+      impressumClass="impressum" />
      <Willkommen />
      <Autokarten />
      <Mitarbeiter />
