@@ -1,0 +1,54 @@
+.kontakt-site h1{
+    text-align: center;
+    padding-bottom: 21.4px;
+    margin-bottom: 0;
+    border-bottom: 2px solid #ff4040bb;
+}
+.kontakt-site > p {
+    margin:21.4px auto;
+    width:70%;
+}
+.kontakt-site h3 {
+    color: #ff4040;
+}
+.google-map{
+    width:1000px;
+    margin:0 auto;
+}
+.adresse-input{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width:fit-content;
+    margin:30px auto;
+}
+.adresse-input form{
+    width:fit-content;
+}
+.adresse-input input{
+    width:300px;
+    height: 20px;
+    border: 1px solid #3a3a3a7c;
+    outline-color: #3a3a3aaf;
+}
+.adresse-input textarea{
+    width:300px;
+    height: 60px;
+    border: 1px solid #3a3a3a7c;
+    outline-color: #3a3a3aaf;
+}
+.adresse-input button{
+    padding:10px 40px;
+    color:#ff4040;
+    font-weight: bold;
+    border: 2px solid #ff4040;
+    border-radius: 3px;
+    cursor:pointer;
+    transition: 0.3s;
+    position: relative;
+    left:175px;
+}
+.adresse-input button:hover{
+    color: white;
+    background-color: #ff4040;
+}
