@@ -1,0 +1,12 @@
+
+.impressum-main h1{
+    margin: 21.4px auto;
+    text-align: center;
+    padding-bottom: 21.4px;
+    margin-bottom: 0;
+    border-bottom: 2px solid #ff4040bb;
+}
+.impressum-container{
+    margin: 20px auto;
+    width: fit-content;
+}
