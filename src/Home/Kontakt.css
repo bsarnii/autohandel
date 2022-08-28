@@ -28,7 +28,7 @@
 .inputs > form{
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 100%;
 }
 .form-row-1{
     display: flex;
@@ -37,13 +37,14 @@
     margin-bottom:20px;
 }
 .form-row-1 input{
-    width:200px;
+    width:90%;
     height:20px;
     border: 1px solid #3a3a3a7c;
     outline-color: #3a3a3aaf;
 }
 .form-row-2 textarea{
-    width: 100%;
+    width: 97%;
+    min-width: 80%;
     height: 75px;
     border: 1px solid #3a3a3a7c;
     outline-color: #3a3a3aaf;
@@ -77,3 +78,13 @@
     height:294px;
     width:350px;
 }
+
+@media only screen and (max-width: 750px){
+    .kontakt-row-2{
+        flex-direction: column;
+    }
+    .form-row-1{
+        flex-direction: column;
+    }
+}
+
