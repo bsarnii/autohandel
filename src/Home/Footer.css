@@ -52,9 +52,13 @@
         flex-direction: column;
         height:fit-content;
         align-items: center;
+        padding-bottom: 20px;
     }
     .footer-col-1 img{
         display: block;
         margin: 20px auto auto auto;
+    }
+    .footer-icons{
+        margin-top:20px;
     }
 }
