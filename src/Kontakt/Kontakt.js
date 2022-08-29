@@ -1,9 +1,12 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Kontakt.css'
 import Header from '../Home/Header'
 import Footer from '../Home/Footer'
 
 function Kontakt() {
+  let [display, setDisplay] = useState("")
+  let [erfolg, setErfolg] = useState("")
+
   return (
     <div className='kontakt-site'>
         <Header 
@@ -28,34 +31,48 @@ function Kontakt() {
           </div>
           <div className='adresse-input-right'>
             <h3>Ihre Nachricht an uns:</h3>
-            <from>
-              <label>Name:</label>
+            {erfolg}
+            <from style={{display:display}}> 
+              <label htmlFor='kontakt-name'>Name:</label>
               <br/>
-              <input type="text" />
-              <br/>
-              <br/>
-              <label>E-Mail-Adresse:</label>
-              <br/>
-              <input type="text" />
+              <input required id='kontakt-name' type="text" />
               <br/>
               <br/>
-              <label>Telefon:</label>
+              <label htmlFor='kontakt-email'>E-Mail-Adresse:</label>
               <br/>
-              <input type="text" />
-              <br/>
-              <br/>
-              <label>Nachricht:</label>
-              <br/>
-              <textarea/>
+              <input required id='kontakt-email' type="text" />
               <br/>
               <br/>
-              <button onClick={(e)=> e.preventDefault()}>Senden</button>
+              <label htmlFor='kontakt-telefon'>Telefon:</label>
+              <br/>
+              <input required id='kontakt-telefon' type="text" />
+              <br/>
+              <br/>
+              <label htmlFor='kontakt-textarea'>Nachricht:</label>
+              <br/> 
+              <textarea id='kontakt-textarea' required/>
+              <br/>
+              <br/>
+              <button type='submit' onClick={submitForm}>Senden</button>
             </from>
           </div>
         </div>
         <Footer />
     </div>
   )
+
+  function submitForm(e){
+    let kontaktName=document.getElementById("kontakt-name").value
+    let kontaktEmail=document.getElementById("kontakt-email").value
+    let kontaktTelefon=document.getElementById("kontakt-telefon").value
+    let kontaktTextarea=document.getElementById("kontakt-textarea").value
+    if (kontaktName!==""&&kontaktEmail!==""&&kontaktTelefon!==""&&kontaktTextarea!==""){
+    setDisplay("none")
+    setErfolg(<p>Ihre nachricht wurde gesendet.</p>)
+    } else {
+      setErfolg(<p>Bitte füllen Sie die Felder komplett aus!</p>)
+    }
+  }
 }
 
 export default Kontakt

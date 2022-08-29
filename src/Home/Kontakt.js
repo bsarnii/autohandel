@@ -10,7 +10,7 @@ function Kontakt() {
         </div>
         <div className='kontakt-row-2'>
             <div className='google-maps'>
-            <iframe title='map' width="300" height="274" id="gmap_canvas" src="https://maps.google.com/maps?q=Stauffenbergstra%C3%9Fe%2025&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
+            <iframe title='map' width="300" height="274" id="gmap_canvas" src="https://maps.google.de/maps?hl=de&q=%20Stauffenbergstraße+25%20Weimar&t=&z=12&ie=utf8&iwloc=b&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
             </div>
             <div className='inputs'>
                 <h2>Ihre Nachricht an uns:</h2>
@@ -24,18 +24,18 @@ function Kontakt() {
                         <div className='input-email'>
                             <label htmlFor='email'>E-Mail-Adresse:</label>
                             <br />
-                            <input name='email' id='email' type='email' />
+                            <input required name='email' id='email' type='email' />
                         </div>
                         <div className='input-telefon'>
                             <label htmlFor='telefon'>Telefon:</label>
                             <br />
-                            <input name='telefon' id='telefon' type='text' />
+                            <input required name='telefon' id='telefon' type='text' />
                         </div>
                     </div>
                     <div className='form-row-2'>
                         <label htmlFor='message'>Nachricht:</label>
                         <br />
-                        <textarea className='message' id='message' name='message'/>
+                        <textarea required className='message' id='message' name='message'/>
                     </div>
                     <div className='form-row-3'>
                         <button onClick={(e)=> e.preventDefault()}>Senden</button>

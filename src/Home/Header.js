@@ -17,7 +17,7 @@ function Header({galerieClass, homeClass, kontaktClass, impressumClass}) {
   return (
         <header>
             <div className='header-left'>
-                <img src='autohaus-logo-neu-2.png' alt="firmen-logo" className='logo' />
+                <Link to='/'><img src='autohaus-logo-neu-2.png' alt="firmen-logo" className='logo' /></Link>
             </div>
             <div className='header-right' id="primary-navigation" data-visible={toggle}>
                 <Link className={homeClass}  to='/'>Home</Link>
