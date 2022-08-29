@@ -12,12 +12,13 @@
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid white;
+    text-align: center;
 }
 .bottom-mitarbeiter{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height:250px;
+    height:fit-content;
 }
 
 .bottom-mitarbeiter p {
@@ -28,14 +29,28 @@
 .geschäftszeiten{
     display: flex;
     flex-direction: row;
-    height:150px;
+    height:fit-content;
     justify-content: space-around;
-    padding-top: 40px;
+    padding: 40px 20px;
     color: #ff4040;
 }
-.col-1 p, .col-2, .col-3 {
+.col-1 p, .col-2{
     color: #3a3a3a;
 }
-.col-2, .col-3 {
+.col-2{
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+@media only screen and (max-width: 750px){
+    .geschäftszeiten{
+        flex-direction: column;
+    }
+    .bottom-mitarbeiter{
+        flex-direction: column;
+    }
+    .bottom-mitarbeiter p {
+        width:fit-content;
+    }
 }

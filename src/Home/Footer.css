@@ -49,5 +49,12 @@
 @media only screen and (max-width: 750px){
     .footer{
         gap:30px;
+        flex-direction: column;
+        height:fit-content;
+        align-items: center;
+    }
+    .footer-col-1 img{
+        display: block;
+        margin: 20px auto auto auto;
     }
 }

@@ -28,14 +28,16 @@ function Mitarbeiter() {
                 <p>Sie erreichen uns unter der Woche täglich von 8 bis 17 Uhr.</p>
             </div>
             <div className='col-2'>
-                <p>Mo-Fr</p>
-                <p>Sa-So</p>
+                <div className='days'>
+                    <p>Mo-Fr</p>
+                    <p>Sa-So</p>
+                </div>
+                <div className='hours'>
+                    <p>9:00 - 17:00</p>
+                    <p>Geschlossen</p>
+                </div>
             </div>
             <div className='col-3'>
-                <p>9:00 - 17:00</p>
-                <p>Geschlossen</p>
-            </div>
-            <div className='col-4'>
                 <h2>01628710079</h2>
             </div>
             

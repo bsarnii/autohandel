@@ -10,7 +10,7 @@ function Kontakt() {
         </div>
         <div className='kontakt-row-2'>
             <div className='google-maps'>
-            <div className="mapouter"><div className="gmap_canvas"><iframe title='map' width="350" height="294" id="gmap_canvas" src="https://maps.google.com/maps?q=Stauffenbergstra%C3%9Fe%2025&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe><br /><a href="https://www.embedgooglemap.net">google map on your website</a></div></div>
+            <iframe title='map' width="300" height="274" id="gmap_canvas" src="https://maps.google.com/maps?q=Stauffenbergstra%C3%9Fe%2025&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
             </div>
             <div className='inputs'>
                 <h2>Ihre Nachricht an uns:</h2>

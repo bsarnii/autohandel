@@ -11,10 +11,6 @@
 .kontakt-site h3 {
     color: #ff4040;
 }
-.google-map{
-    width:1000px;
-    margin:0 auto;
-}
 .adresse-input{
     display: flex;
     flex-direction: row;
@@ -51,4 +47,24 @@
 .adresse-input button:hover{
     color: white;
     background-color: #ff4040;
+}
+.google-map >iframe{
+    display: block;
+    width: 1000px;
+    height:500px;
+    margin:auto;
+}
+@media only screen and (max-width: 1050px){
+    .google-map >iframe{
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 750px){
+    .google-map >iframe{
+        width: 300px;
+        height:300px;
+    }
+    .adresse-input{
+        flex-direction: column;
+    }
 }

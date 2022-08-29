@@ -16,7 +16,7 @@ function Kontakt() {
            Füllen Sie einfach das Kontaktformular aus, und wir setzen uns schnellstmöglich
            mit Ihnen in Verbindung.</p>
         <div className='google-map'>
-        <div style={{height:"500px",width:"1000px"}}><iframe width="1000" height="500" src="https://maps.google.de/maps?hl=de&q=%20Stauffenbergstraße+25%20Weimar&t=&z=12&ie=utf8&iwloc=b&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title='google-map' style={{height:"500px",width:"1000px"}}></iframe></div>
+        <iframe src="https://maps.google.de/maps?hl=de&q=%20Stauffenbergstraße+25%20Weimar&t=&z=12&ie=utf8&iwloc=b&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title='google-map' ></iframe>
         </div>
         <div className='adresse-input'>
           <div className='adresse-input-left'>
