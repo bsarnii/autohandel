@@ -50,7 +50,6 @@ const Galerie = () => {
   const bildArray=[bild1,bild2,bild3,bild4,bild5];
     setBild({backgroundImage:bildArray[arrayNumber],display:"block"});
   }},[arrayNumber])
-  console.log(arrayNumber + "rendered in useffect")
   return (
     <>
       <div className='galerie' style={backgroundBlur}>
