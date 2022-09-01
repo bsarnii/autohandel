@@ -26,7 +26,7 @@ function Footer() {
         <div className='footer-icons'>
           <a href='https://www.facebook.com' target='_blank' rel='noreferrer'><FacebookIcon fontSize='large'/></a>
           <a href='https://www.twitter.com' target='_blank' rel='noreferrer'><TwitterIcon fontSize='large'/></a>
-          <a href='https://www.instagram.com' target='_blank' rel='noreferrer'><InstagramIcon fontSize='large'/></a>
+          <a href='https://www.instagram.com/bsarnii/' target='_blank' rel='noreferrer'><InstagramIcon fontSize='large'/></a>
         </div>
       </div>
     </div>

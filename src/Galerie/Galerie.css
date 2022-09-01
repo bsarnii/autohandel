@@ -56,6 +56,39 @@
     background-image: url('/public/galerie/bild-5.jpg');
     background-size: cover;
 }
+.big-img-container{
+    position:fixed;
+    height:80%;
+    width:80%;
+    left:10%;
+    right:10%;
+    top:10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 5;
+}
+.big-img-container > .MuiSvgIcon-root:first-child{
+    position: absolute;
+    right:1px;
+    top:1px;
+    cursor: pointer;
+    fill: #ff4040;
+}
+.big-img-container > .MuiSvgIcon-root:nth-child(2){
+    position:absolute;
+    left:1px;
+    top:50%;
+    fill: #ff4040;
+    cursor: pointer;
+}
+.big-img-container > .MuiSvgIcon-root:nth-child(3){
+    position:absolute;
+    right:1px;
+    top:50%;
+    fill: #ff4040;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 1300px){
     .galerie-container{

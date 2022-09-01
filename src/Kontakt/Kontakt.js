@@ -61,7 +61,7 @@ function Kontakt() {
     </div>
   )
 
-  function submitForm(e){
+  function submitForm(){
     let kontaktName=document.getElementById("kontakt-name").value
     let kontaktEmail=document.getElementById("kontakt-email").value
     let kontaktTelefon=document.getElementById("kontakt-telefon").value

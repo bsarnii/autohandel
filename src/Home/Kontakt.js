@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Kontakt.css'
 
 function Kontakt() {
+    let [displayForm,setDisplayForm] = useState("");
+    let [inputErfolg, setInputErfolg] = useState("");
   return (
     <div className='kontakt-section'>
         <div className='kontakt-row-1'>
@@ -14,7 +16,8 @@ function Kontakt() {
             </div>
             <div className='inputs'>
                 <h2>Ihre Nachricht an uns:</h2>
-                <form>
+                {inputErfolg}
+                <form style={{display:displayForm}}>
                     <div className='form-row-1'>
                         <div className='input-name'>
                             <label htmlFor='name'>Name:</label>
@@ -38,13 +41,26 @@ function Kontakt() {
                         <textarea required className='message' id='message' name='message'/>
                     </div>
                     <div className='form-row-3'>
-                        <button onClick={(e)=> e.preventDefault()}>Senden</button>
+                        <button onClick={submitInputForm}>Senden</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
   )
+  function submitInputForm(){
+    let inputName=document.getElementById("name").value
+    let inputEmail=document.getElementById("email").value
+    let inputTelefon=document.getElementById("telefon").value
+    let inputTextarea=document.getElementById("message").value
+    if (inputName!==""&&inputEmail!==""&&inputTelefon!==""&&inputTextarea!==""){
+    setDisplayForm("none")
+    setInputErfolg(<p>Ihre nachricht wurde gesendet.</p>)
+    } else {
+      setInputErfolg(<p>Bitte füllen Sie die Felder komplett aus!</p>)
+    }
+  }    
+
 }
 
 export default Kontakt

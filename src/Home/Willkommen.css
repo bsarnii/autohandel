@@ -31,11 +31,16 @@
 }
 .btn {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, 'Roboto', sans-serif;
+    text-decoration: none;
     top: 450px;
     left: 60vw;
     height:60px;
     width:240px;
-    font-size: 25px;
+    font-size: 22px;
     border-radius: 5px;
     z-index: 3;
     background-color: #ff4040;

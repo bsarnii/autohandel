@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Willkommen.css'
 
 function Willkommen() {
   return (
     <div className='willkommen'>
         <h1>Herzlich Willkommen <br />in unserem<br /> Autohaus</h1>
-        <button className='btn' onClick={(e)=> e.preventDefault()}>MEHR ERFAHREN</button>
+        <Link to='/galerie' role='button' className='btn'>MEHR ERFAHREN</Link>
     </div>
   )
 }
