@@ -17,7 +17,15 @@
     cursor: pointer;
     fill: #ff4040;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1200px) {
+    .home-img-container{
+        height: 80%;
+        width:100%;
+        left:0%;
+        right:0%;
+    }
+}
+@media only screen and (max-width: 900px) {
     .home-img-container{
         height: 55%;
         width:100%;
@@ -26,7 +34,7 @@
         top:22.5%;
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 650px) {
     .home-img-container{
         height: 45%;
         width:100%;

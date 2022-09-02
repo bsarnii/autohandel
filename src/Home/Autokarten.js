@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { setAstra, setBMW, setGolf } from '../counter';
+import { setAstra, setAudi, setBMW, setGolf, setTroc } from '../counter';
 import './Autokarten.css'
 import Karte from './Karte'
 
