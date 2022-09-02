@@ -6,6 +6,7 @@ import Autokarten from './Autokarten';
 import Mitarbeiter from './Mitarbeiter';
 import Kontakt from './Kontakt';
 import Footer from './Footer';
+import CloseIcon from '@mui/icons-material/Close'
 
 
 function Home() {
@@ -21,6 +22,9 @@ function Home() {
      <Mitarbeiter />
      <Kontakt />
      <Footer />
+     <div className='home-img-container' style={{backgroundImage:"url('./opel-astra.jpg')"}}>
+     <CloseIcon fontSize='large'/>
+     </div>
     </div>
   )
 }

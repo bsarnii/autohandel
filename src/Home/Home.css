@@ -1,0 +1,37 @@
+.home-img-container{
+    position:fixed;
+    height:80%;
+    width:80%;
+    left:10%;
+    right:10%;
+    top:10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 5;
+}
+.home-img-container > .MuiSvgIcon-root{
+    position: absolute;
+    right:1px;
+    top:1px;
+    cursor: pointer;
+    fill: #ff4040;
+}
+@media only screen and (max-width: 720px) {
+    .home-img-container{
+        height: 55%;
+        width:100%;
+        left:0%;
+        right:0%;
+        top:22.5%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .home-img-container{
+        height: 45%;
+        width:100%;
+        left:0%;
+        right:0%;
+        top:25%;
+    }
+}

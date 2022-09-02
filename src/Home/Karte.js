@@ -6,7 +6,7 @@ function Karte({name, img, jahr, kraftstoff, leistung, km, preis}) {
 
   return (
     <>
-      <div className='karte'>
+      <div className='karte' onClick={()=>{console.log("hello")}}>
           <img 
           className='karte-img' 
           src={img}

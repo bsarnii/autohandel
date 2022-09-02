@@ -11,10 +11,16 @@ const Galerie = () => {
   let [arrayNumber, setArrayNumber]= useState();
   let [backgroundBlur, setBackgroundBlur] = useState({});
   
-
+  const bild1="url(/galerie/bild-1.jpg)";
+  const bild2="url(/galerie/bild-2.jpg)";
+  const bild3="url(/galerie/bild-3.jpg)";
+  const bild4="url(/galerie/bild-4.jpg)";
+  const bild5="url(/galerie/bild-5.jpg)";
+  const bildArray=[bild1,bild2,bild3,bild4,bild5];
   function openBild(x){
     setArrayNumber(x)
-    setBackgroundBlur({filter:"blur(2px)"})
+    setBackgroundBlur({filter:"blur(2px)"});
+    setBild({backgroundImage:bildArray[arrayNumber],display:"block"});
   }
   function closeBild(){
     setBild({display:"none"})
@@ -48,8 +54,10 @@ const Galerie = () => {
   const bild4="url(/galerie/bild-4.jpg)";
   const bild5="url(/galerie/bild-5.jpg)";
   const bildArray=[bild1,bild2,bild3,bild4,bild5];
-    setBild({backgroundImage:bildArray[arrayNumber],display:"block"});
+  setBackgroundBlur({filter:"blur(2px)"});
+  setBild({backgroundImage:bildArray[arrayNumber],display:"block"});
   }},[arrayNumber])
+
   return (
     <>
       <div className='galerie' style={backgroundBlur}>
