@@ -1,4 +1,5 @@
 import React from 'react'
+import { useSelector, useDispatch } from "react-redux";
 import './Home.css';
 import Header from './Header';
 import Willkommen from './Willkommen';
@@ -7,9 +8,13 @@ import Mitarbeiter from './Mitarbeiter';
 import Kontakt from './Kontakt';
 import Footer from './Footer';
 import CloseIcon from '@mui/icons-material/Close'
+import { closeImage } from '../counter';
 
 
 function Home() {
+  const { value } = useSelector( state => state.counter)
+  const dispatch = useDispatch()
+
   return (
     <div>
      <Header 
@@ -22,8 +27,8 @@ function Home() {
      <Mitarbeiter />
      <Kontakt />
      <Footer />
-     <div className='home-img-container' style={{backgroundImage:"url('./opel-astra.jpg')"}}>
-     <CloseIcon fontSize='large'/>
+     <div className='home-img-container' style={value}>
+     <CloseIcon fontSize='large' onClick={()=>{dispatch(closeImage())}}/>
      </div>
     </div>
   )

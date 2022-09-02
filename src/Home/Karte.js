@@ -2,11 +2,11 @@ import React from 'react'
 import './Karte.css'
 
 
-function Karte({name, img, jahr, kraftstoff, leistung, km, preis}) {
+function Karte({name, img, jahr, kraftstoff, leistung, km, preis, clickFunction}) {
 
   return (
     <>
-      <div className='karte' onClick={()=>{console.log("hello")}}>
+      <div className='karte' onClick={clickFunction}>
           <img 
           className='karte-img' 
           src={img}

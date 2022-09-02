@@ -1,8 +1,11 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { setAstra, setBMW, setGolf } from '../counter';
 import './Autokarten.css'
 import Karte from './Karte'
 
 function Autokarten() {
+  const dispatch = useDispatch();
   return (
     <div className='autokarten'>
         <h2>Unsere Fahrzeuge</h2>
@@ -15,6 +18,7 @@ function Autokarten() {
             kraftstoff='Benzin'
             km='65.000 km'
             preis='12 000 €'
+            clickFunction={()=>{dispatch(setAstra())}}
             />
             <Karte 
             name='BMW 745e 7 series G12'
@@ -24,6 +28,7 @@ function Autokarten() {
             kraftstoff='Hybrid (Benzin/Elektro)'
             km='3.815 km'
             preis='85 000 €'
+            clickFunction={()=>{dispatch(setBMW())}}
              />
             <Karte 
             name='Volkswagen Golf VII'
@@ -33,6 +38,7 @@ function Autokarten() {
             kraftstoff='Benzin'
             km='57.990 km'
             preis='34 890 €'
+            clickFunction={()=>{dispatch(setGolf())}}
             />
             <Karte 
             name='Audi A3'
@@ -42,6 +48,7 @@ function Autokarten() {
             kraftstoff='Benzin'
             km='72.300 km'
             preis='24 700 €'
+            clickFunction={()=>{dispatch(setAudi())}}
             />
             <Karte 
             name='Volkswagen T-Roc R-Line'
@@ -51,6 +58,7 @@ function Autokarten() {
             kraftstoff='Benzin'
             km='6.944 km'
             preis='42 000 €'
+            clickFunction={()=>{dispatch(setTroc())}}
             />
         </div>
     </div>
